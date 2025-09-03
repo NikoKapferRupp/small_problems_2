@@ -1,3 +1,5 @@
+let p = require('../logger')
+
 function multisum(num) {
   let result = [];
 
@@ -13,3 +15,9 @@ function multisum(num) {
 
   return result.reduce((acc, cur) => acc + cur);
 }
+
+p(multisum(3))
+p(multisum(5))
+p(multisum(10))
+p(multisum(1000))
+
